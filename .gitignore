@@ -1,0 +1,9 @@
+.ideadist
+node_modules/
+.cache/
+.vscode/
+.env
+dockerbuild.sh
+package-lock.json
+NAVS-AAD-Example-APP/.env
+Teams-Portal/.env
