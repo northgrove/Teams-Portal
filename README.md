@@ -25,7 +25,7 @@ The application use Azure AD B2C to integrate with IDporten. That means that Azu
 
 ## Run the application
 ```
-run from .\Teams-Prtal\:
+run from .\Teams-Portal\:
 
 npm install
 npm start
