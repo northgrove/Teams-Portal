@@ -51,8 +51,8 @@ module.exports = passport => {
         cookieEncryptionKeys: cookieEncryptionKeys,
         useCookieInsteadOfSession: useCookieInsteadOfSession,
         nonceLifetime: nonceLifetime,
-        loggingNoPII: false,
-        isB2C: isB2C
+        loggingNoPII: false
+       // isB2C: isB2C
       },
       (req, iss, sub, profile, accessToken, refreshToken, done) => {
         if (!profile.oid) {

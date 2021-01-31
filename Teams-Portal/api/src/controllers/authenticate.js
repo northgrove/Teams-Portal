@@ -42,7 +42,7 @@ exports.authenticateAzureCallback = () => {
     try {
       passport.authenticate('azuread-openidconnect', {
         response: res,
-        successRedirect: '/',
+        successRedirect: req.session.redirectUrl || '/',
         failureRedirect: '/error'
       })(req, res, next)
     } catch (err) {
@@ -69,7 +69,7 @@ exports.ensureAuthenticated = () => {
       */
       return next()
     }
-    res.redirect('/login?p=B2C_1_signin')
+    res.redirect('/login') //?p=B2C_1_signin'')
   }
 }
 
